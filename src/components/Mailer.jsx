@@ -9,7 +9,7 @@ const Mailer = () => {
     const navigate = useNavigate();
     const handleSubmit = () => {
         console.log(email);
-        axios.post("/mail", {
+        axios.post("https://mernfrontauth.onrender.com/mail", {
             email: email,
         }).then((res) => {
             console.log(res.data);

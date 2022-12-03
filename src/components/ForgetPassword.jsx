@@ -11,7 +11,7 @@ const ForgetPassword = () => {
     console.log(email);
     e.preventDefault();
     axios
-      .post("/send-otp", {
+      .post("https://mernfrontauth.onrender.com/send-otp", {
         email: email,
       })
       .then((res) => {

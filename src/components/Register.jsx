@@ -25,7 +25,7 @@ const Register = () => {
     e.preventDefault();
     console.log(name, email, password);
     axios
-      .post("/register", {
+      .post("https://mernfrontauth.onrender.com/register", {
         name: name,
         email: email,
         password: password,

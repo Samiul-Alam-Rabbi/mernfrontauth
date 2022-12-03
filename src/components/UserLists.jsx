@@ -7,7 +7,7 @@ const UserLists = () => {
     const [totalusers, setTotalusers] = useState("");
     const navigate = useNavigate();
     useEffect(() => {
-        axios.get("/getusers").then((res)=> {
+        axios.get("https://mernfrontauth.onrender.com/getusers").then((res)=> {
             console.log(res.data);
             setUser(res.data.users);
             setTotalusers(res.data.total);

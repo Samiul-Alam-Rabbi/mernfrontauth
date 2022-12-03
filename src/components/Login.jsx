@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     console.log(email, password);
     axios
-      .post("/signin", {
+      .post("https://mernfrontauth.onrender.com/signin", {
         email: email,
         password: password,
       })

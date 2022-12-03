@@ -12,7 +12,7 @@ const NewSubmit = () => {
     // console.log(otp, password)
     e.preventDefault();
     axios
-      .post("/submit-otp", {
+      .post("https://mernfrontauth.onrender.com/submit-otp", {
         otp: otp,
         password: password
       })
